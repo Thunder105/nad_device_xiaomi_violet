@@ -13,6 +13,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 NAD_BUILD_TYPE := UNOFFICIAL
 
+# Inherit ANX Camera
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_violet
 PRODUCT_DEVICE := violet
